@@ -6,7 +6,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.commit
-import com.example.currency_converter.uii.CalculatorFragment
+import com.example.currency_converter.uii.Calcu
 import com.example.currency_converter.uii.RatesFragment
 
 
@@ -21,14 +21,14 @@ class MainActivity : AppCompatActivity() {
 
         // Ekran startowy
         supportFragmentManager.commit {
-            replace(R.id.fragmentContainer, CalculatorFragment())
+            replace(R.id.fragmentContainer, Calcu())
         }
 
         nav.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_calculator -> {
                     supportFragmentManager.commit {
-                        replace(R.id.fragmentContainer, CalculatorFragment())
+                        replace(R.id.fragmentContainer, Calcu())
                     }
                 }
                 R.id.nav_rates -> {

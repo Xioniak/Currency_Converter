@@ -9,28 +9,39 @@
 
     <EditText
         android:id="@+id/amountInput"
-        android:hint="kwota"
-        android:textColor="#fff"
-        android:backgroundTint="#fff"
-        android:inputType="numberDecimal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:hint="quota"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="#fff"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/fromInput"
-        android:hint="Z waluty (np. EUR)"
-        android:textColor="#fff"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:hint="Z waluty (np. EUR)"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#fff"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/toInput"
-        android:hint="Na walutę (np. USD)"
-        android:textColor="#fff"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:hint="Na walutę (np. USD)"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#fff"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/convertBtn"
