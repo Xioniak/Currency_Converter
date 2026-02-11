@@ -1,8 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_calculator"
-        android:title="Calculator" />
+        android:id="@+id/nav_converter"
+        android:title="Converter" />
     <item
         android:id="@+id/nav_rates"
-        android:title="Currency rates" />
+        android:title="Course list" />
+    <item
+        android:id="@+id/nav_theme"
+        android:title="Change theme" />
 </menu>

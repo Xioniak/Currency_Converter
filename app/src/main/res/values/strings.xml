@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Currency_Converter</string>
+    <string name="navigation_drawer_open">Open menu</string>
+    <string name="navigation_drawer_close">Close menu</string>
 </resources>

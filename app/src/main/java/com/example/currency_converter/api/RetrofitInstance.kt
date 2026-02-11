@@ -4,12 +4,13 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
+    private const val BASE_URL = "https://api.nbp.pl/"
 
-    val api: ExchangeApi by lazy {
+    val api: NbpApiService by lazy {
         Retrofit.Builder()
-            .baseUrl("https://api.exchangerate.host/")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(ExchangeApi::class.java)
+            .create(NbpApiService::class.java)
     }
 }
